@@ -116,6 +116,18 @@ partnersOpenBtn.onclick = function () {
   partnersGrid.classList.toggle("partners-grid_active");
 };
 
+//tools open
+let toolsOpenBtn = document.querySelector(
+  ".main-btn_tools"
+);
+toolsOpenBtn.onclick = function () {
+  let toolsGrid = document.querySelector(".tools-list__item_hidden");
+  toolsGrid.classList.toggle("tools-list__item_hidden-active");
+  document.querySelector('.tools-list').classList.toggle(".tools-list_active")
+};
+
+
+
 //sliders
 const swiper = new Swiper('.swiper', {
  
