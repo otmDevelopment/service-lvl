@@ -93,6 +93,7 @@
 
   .sales-form__content {
     border: none;
+    padding: 0;
   }
 }
 
