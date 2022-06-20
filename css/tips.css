@@ -55,7 +55,7 @@
   }
 }
 
-
+.how-work__top,
 .noname-problems__top {
   display: flex;
   align-items: center;
@@ -64,6 +64,7 @@
   border: 1px solid var(--border);
   border-radius: 8px;
   margin-bottom: 25px;
+  text-align: left;
 }
 
 .noname-problems__btn-wrapper {
