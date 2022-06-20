@@ -101,6 +101,27 @@ class ItcTabs {
 }
 new ItcTabs(".tabs");
 
+ymaps.ready(function () {
+  var myMap = new ymaps.Map('map',  {
+          searchControlProvider: 'yandex#search'
+      }),
+
+      myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+          hintContent: 'Собственный значок метки',
+      }, {
+          // Опции.
+          // Необходимо указать данный тип макета.
+          iconLayout: 'default#image',
+          // Своё изображение иконки метки.
+          iconImageHref: 'img/map-tag.svg',
+          // Размеры метки.
+          iconImageSize: [24, 24],
+      })
+
+  myMap.geoObjects
+      .add(myPlacemark)
+});
+
 // больше одних табов на странице
 // const tabs = document.querySelectorAll('.tabs');
 // for (let i = 0, length = tabs.length; i < length; i++) {
