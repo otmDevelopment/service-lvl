@@ -28,7 +28,6 @@
   background-repeat: no-repeat;
   width: 335px;
   height: 715px;
-
 }
 .sales-form__form .main-form::after {
   content: "";
@@ -97,7 +96,6 @@
     flex-direction: column;
     align-items: center;
   }
-
 
   .sales-form__form .main-form {
     margin-left: auto;

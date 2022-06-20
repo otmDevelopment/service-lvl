@@ -2443,7 +2443,7 @@
           </h2>
           <div class="how-work">
             <div class="how-work__top">
-              <div>
+              <div style="flex-shrink: 0">
                 <img
                   style="display: block; margin-right: 15px"
                   src="img/icons/attention.svg"
@@ -2494,12 +2494,130 @@
         </div>
       </section>
 
+      <section class="section section-crm">
+        <div class="container">
+          <h2 class="main-h2">
+            <span class="main-h2__line">у</span> нас своя crm система
+          </h2>
+          <div class="crm">
+            <div class="crm__item">
+              <p class="crm__txt">
+                CRM система обслуживается нашим IT-департаментом. Вы получите
+                доступ к большому объему важных функций
+              </p>
+            </div>
+            <div class="crm__item">
+              <ul class="crm-list">
+                <li class="crm-list__li">
+                  <h3 class="crm-list__title">Интеграция</h3>
+                  <p class="crm-list__txt">
+                    Вы сможете интегрироваться с системой всего за 1 час с нашим
+                    IT-департаментомs
+                  </p>
+                </li>
+                <li class="crm-list__li">
+                  <h3 class="crm-list__title">Два клика</h3>
+                  <p class="crm-list__txt">
+                    Вы сможете сделать любой заказ всего в два клика. Система
+                    позволяет обеспечить весь пул интеграционных возможностей
+                    для вашего удобства
+                  </p>
+                </li>
+                <li class="crm-list__li">
+                  <h3 class="crm-list__title">Контроль</h3>
+                  <p class="crm-list__txt">
+                    У Вас будет возможность осуществления контроля вашего заказа
+                    и общаться с монтажниками в режиме реального времени
+                  </p>
+                </li>
+                <li class="crm-list__li">
+                  <h3 class="crm-list__title">Документы</h3>
+                  <p class="crm-list__txt">
+                    Вы получите полный список документов необходимых для старта
+                    заказа и для его закрытия, например такие как: «Акт
+                    выполненных работ»
+                  </p>
+                </li>
+                <li class="crm-list__li">
+                  <h3 class="crm-list__title">Этапность</h3>
+                  <p class="crm-list__txt">
+                    Каждый этап выполнения вашего заказа будет находится под
+                    вашим полным контролем. Вы сможете получить помощь или
+                    оформить претензию в режиме реального времени
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section sectio-risk">
+        <div class="container">
+          <h2 class="main-h2">
+            <span class="main-h2__line">снижение</span> рисков
+          </h2>
+          <div class="risk">
+            <div class="risk__item">Сокращение рекламаций</div>
+            <div class="risk__item">
+              <div class="risk-content">
+                <p class="risk-content__txt">
+                  Мы как профессиональный подрядчик, снизим как репутационные,
+                  так и прямые финансовые риски. Отбор сотрудников, первичная
+                  стажировка, курсы повышения квалификации позволяет внутри
+                  большого коллектива быстро внедрять новые приемы и лучшие
+                  практики
+                </p>
+                <div class="risk-content__img-wrapper">
+                  <img src="img/b2b-risk.svg" alt="график снижения рисков" />
+                </div>
+                <p class="risk-content__txt">
+                  График снижения рекламаций после введения трехфакторной
+                  системы обеспечения качества
+                </p>
+                <div class="risk-content__btn-wrapper">
+                  <button type="button" class="main-btn" data-fancybox data-src="#main-popup">
+                    <span class="main-btn__icon-wrapper">
+                      <img
+                        class="main-btn__icon"
+                        src="img/icons/shop.svg"
+                        width="24"
+                        height="24"
+                        alt="телефон"
+                      />
+                    </span>
+                    <span class="main-btn__txt-wrapper">
+                      <span class="main-btn__txt">подключить магазин </span>
+                    </span>
+                  </button>
+                  <button type="button" class="main-btn" data-fancybox data-src="#main-popup">
+                    <span class="main-btn__icon-wrapper">
+                      <img
+                        class="main-btn__icon"
+                        src="img/icons/phone-white.svg"
+                        width="24"
+                        height="24"
+                        alt="телефон"
+                      />
+                    </span>
+                    <span class="main-btn__txt-wrapper">
+                      <span class="main-btn__txt"> заказать звонок </span>
+                    </span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="section section-sales-form">
         <div class="container">
           <div class="sales-form">
             <div class="sales-form__content">
               <p class="sales-form__p">
-                Доверьте монтаж профессионалам! Получите договор за один звонок и предложение лояльности от объема у нашего менеджера
+                Доверьте монтаж профессионалам! Получите договор за один звонок
+                и предложение лояльности от объема у нашего менеджера
               </p>
               <h2 class="sales-form__h2">
                 Обслуживаем уже более <span class="bold">300 магазинов!</span>
@@ -3715,7 +3833,7 @@
           // Масштаб, тут все просто
           zoom: 13,
           // Отключаем все элементы управления
-          controls: []
+          controls: [],
         });
 
         var myGeoObjects = [];
