@@ -14,8 +14,23 @@
 
 .sales-form__form {
   width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 100px;
 }
+.sales-form__form .main-form::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: -60px;
+  left: -100px;
+  background-image: url("../img/gray-door.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 335px;
+  height: 715px;
 
+}
 .sales-form__form .main-form::after {
   content: "";
   position: absolute;
@@ -86,8 +101,12 @@
   .sales-form__form .main-form {
     margin-left: auto;
     margin-right: auto;
-  margin-top: 40px;}
+    margin-top: 40px;
+  }
   .sales-form__form .main-form::after {
+    display: none;
+  }
+  .sales-form__form .main-form::before {
     display: none;
   }
 
