@@ -187,15 +187,30 @@ img {
 .ymaps-2-1-79-map:not(:first-child) {
   display: none;
 }
-#map {
+.map-wrapper {
+  position: relative;
+}
+.map {
   height: 600px;
 }
+.map-info {
+  position: absolute;
+  left: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #fff;
+}
 @media (max-width: 550px) {
-  #map {
+  .map {
     height: 400px;
   }
 }
 @media (max-width: 767px) {
+  .map-info {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50%;
+  }
   .container {
     padding: 0 16px;
   }
@@ -245,6 +260,6 @@ img {
     padding-top: 60px;
   }
   .section-contacts {
-    padding-bottom: 60px;
+    padding-bottom: 220px;
   }
 }
